@@ -1,0 +1,18 @@
+
+
+Broscuta nu ajunge la mal
+Timpul pentru euristica = functia distanta cerc 0.00035839999999999483
+
+
+Broscuta nu ajunge la mal
+Timpul pentru euristica = functia distanta cerc 0.0003282000000000007
+
+
+Broscuta nu ajunge la mal
+Timpul pentru euristica = functia distanta cerc 0.00035630000000000384
+
+
+Broscuta nu ajunge la mal
+Timpul pentru euristica = functia distanta cerc 0.0003242999999999996
+
+

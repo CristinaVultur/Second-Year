@@ -1,0 +1,25 @@
+table{
+	border:5px solid green;
+	border-collapse: collapse;
+}
+td{
+	margin:0;
+	padding:30px;  
+	height:35px;
+}
+tr:nth-child(1) *{
+	border:3px solid blue;
+}
+tr:nth-child(2) *{
+	border:3px solid red;
+	background-image:url("http://www.irinaciocan.ro/tehnici_web/imagini/backgr_pas3.png");
+	
+}
+tr:nth-child(3) *{
+	border:3px solid green;
+}
+tr:nth-child(2) td:hover{
+	background-image:none;
+	background-color:blue;
+	cursor:crosshair;
+}

@@ -1,0 +1,26 @@
+
+<nav>
+	<ul class="menu">
+
+            <li><a href="/">Home</a></li>
+            <li><a href="/inregistrare_studenti">Student nou</a></li>
+            
+            <li><a href="/studenti">Studenti</a></li>
+			<% if(locals.user && user.rol=="admin"){ %>
+				<li><a href="/inregistrare_user">Inreg user</a></li>
+				<li><a href="/useri">Lista useri</a></li>
+			<% } %>
+			<% if(locals.user && user.rol=="prof"){ %>
+				<li><a href="/introducere_note">Introd note</a></li>
+			<% } %>
+			<% if(locals.user){ %>
+            <li><a href="/logout">Logout</a></li>
+			<% } %>
+    </ul>
+
+
+
+</nav>
+	<% if(locals.user){ %>
+		<p class="salut">Salut,<br/><%= user.username %></p>
+	<% } %>

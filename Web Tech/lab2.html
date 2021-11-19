@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zxx">
+	
+	<head>
+	<meta charset="UTF-8">
+		<!-- 5 -->
+		<link rel="stylesheet" type="text/css" href="lab2ex.css"/>
+		<!--daca e pus inainte textul ramane cu ultima culoare din style, iar daca e pus dupa style textul are culoare verde -->
+        <style>
+        /* 3 */
+         p{
+         color : pink;
+		 /* 4//toate paragrafele se fac gri datorita regulei de prioritate */
+         color: gray;
+         }
+         /* 1 */
+         body{
+         background-color: #EEEEEE;
+         /* pentru seloctori de aceeasi prioritate se pune ultima
+         background-image: url("http://irinaciocan.ro/tehnici_web/imagini/carouri.png");
+         */
+         background-image:url("http://irinaciocan.ro/imagini/gri.png"),url("http://irinaciocan.ro/tehnici_web/imagini/carouri.png"),url("http://irinaciocan.ro/tehnici_web/imagini/mazgaleala.png");
+         background-repeat: repeat-y,repeat,repeat;
+         /* 2 */
+		 background-position: 40px 0px,-10px -10px,0 0;
+         padding-left: 50px;
+         padding-right:5px;
+         }
+		 /* 7 */
+		 h1{
+		 color:blue;
+		 display:inline; /*daca nu schimbam din block in inline tot randul era colorat cu albastru nu doar fundalul la titlu*/ 
+		 background-color:lightblue;
+		 }
+		 /* 8 */
+		 /*
+		 h3~p{
+				border-style:dotted;
+				border-width:2 px;
+				border-color: blue;
+				color:green;
+				background-image:url('http://irinaciocan.ro/tehnici_web/imagini/backgr_pas3.png');
+				background-attachment: fixed;
+			}
+		*/
+		h3+p{
+				border-style:dotted;
+				border-width:2px;
+				border-color: blue;
+				color:green;
+				background-image:url('http://irinaciocan.ro/tehnici_web/imagini/backgr_pas3.png');
+				background-attachment: fixed;
+			}
+		/* 9 */
+			.c1 {
+			 background-color:purple;
+			}
+		/* 10 */
+			.c2 {
+			 font-style:italic;
+			 /* 11 */
+		     text-decoration:line-through;
+		 }
+		 /* 10 */
+		 p.c3{
+			font-variant:small-caps;
+			 /* 11 */
+		     text-decoration:overline;
+		 }
+		 /* 12 */
+		 .c2.c3{
+			 font-style:normal;
+			 color:rgb(220, 20, 60);
+		 }
+		  /* 13 */
+		 #par{
+			 color:orange;
+			 text-decoration:overline underline;
+			 font-weight:bold;
+		 }
+		 /* 14 */
+		 section#abc p{
+			 box-shadow: 15px 15px red;
+		 }
+		 /* 15 */
+		 section#abc>p{
+			text-shadow: 5px 5px red;
+			box-shadow: 15px 15px green;
+		 }
+		 /* 16 */
+		 ol li{
+		    list-style-type:lower-roman;
+			border:4px ridge purple;
+			border-top-left-radius:10px;
+			border-top-right-radius:10px;
+		 }
+		 /* 17/19?*/
+		p[title]:first-letter{
+		     font-size: 20px;
+		}
+		 /* 18 */
+		p[title=altceva]:hover{
+		     background:pink;
+		}
+		p+p{
+		     text-indent:25px;  /*20*/
+		 }
+		  /* 21 */
+		body>section:first-of-type{
+		    border-left:4px dashed green;
+			border-top:4px dashed green;
+		 }
+		 /* 22 */
+		section :first-child:after{
+		    content:" primul";
+		 }
+		 /* 23 */
+		h1:before, h2:before, h3:before{
+		    content:url('http://irinaciocan.ro/imagini/foarte_zambaret.png')
+		 }
+		 p:not([class]):not([id]) {
+		     cursor:crosshair;
+		}
+		*{
+			outline: 3px dotted gray;
+		}
+         </style>
+		<title>Un text</title>
+		
+	</head>
+	<body>
+		<h1>Titlu</h1>
+		<section>
+			
+			   <h2>Capitol 1</h2>
+			   <!-- 10-->
+					<p class='c2'> par 1.1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+					<p class='c2'> par 1.2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+					<p class='c2'> par 1.3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+					<p> par 1.4 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+			
+		</section>
+		<section>
+		<!--9-->
+			<div class='c1'>
+				<h2>Capitol 2</h2>
+				<!--13-->
+				<p id="par" title="ceva"> par 2.1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+				<p> par 2.2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+				<p title="ceva"> par 2.3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+				<p title="altceva"> par 2.4 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+			</div>
+		</section>
+		<section id="abc">
+			<h2>Capitol 3</h2>
+			<p class='c3'> par 3.1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+			<p class='c3'> par 3.2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+			<!--11 paragraful ia atributele ultimei clase-->
+			<p class='c2 c3'> par 3.3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+			<p class='c2 c3'> par 3.4 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+			<section>
+				<h3 class='c2'>Subcapitol 3.1</h3>
+				<p title="ceva"> par 3.1.1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+				<!--9 obs ca ce se afla in tagul span primeste prprietatile clasei c1-->
+				<p title="ceva"> par 3.1.2 <span class='c1'> Lorem ipsum dolor sit amet,<br/> consectetur adipisicing elit</span>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+				<p> par 3.1.3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+				<p title="altceva"> par 3.1.4 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+			</section>
+			<section>
+				<!--10 h3 nu o sa devina small caps -->
+				<h3 class='c3'>Subcapitol 3.2</h3>
+				<p> par 3.2.1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+				<p title="ceva"> par 3.2.2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+				<p title="altceva"> par 3.2.3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+				<ol>
+					<li>abc</li>
+					<li>def</li>
+					<li>ghi</li>
+					<li>jkl</li>
+					<li>mno</li>
+				</ol>
+			</section>
+		</section>
+	</body>
+</html>

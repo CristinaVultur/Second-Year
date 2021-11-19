@@ -1,0 +1,20 @@
+Broscuta se afla pe frunza initiala id1.Greutate broasca:6.0
+Broscuta a ajuns la mal in 1 sarituri
+Timpul pentru euristica = functia distanta cerc 0.0007969999999999922
+
+
+Broscuta se afla pe frunza initiala id1.Greutate broasca:6.0
+Broscuta a ajuns la mal in 1 sarituri
+Timpul pentru euristica = functia distanta cerc 0.0008306000000000008
+
+
+Broscuta se afla pe frunza initiala id1.Greutate broasca:6.0
+Broscuta a ajuns la mal in 1 sarituri
+Timpul pentru euristica = functia distanta cerc 0.000904000000000002
+
+
+Broscuta se afla pe frunza initiala id1.Greutate broasca:6.0
+Broscuta a ajuns la mal in 1 sarituri
+Timpul pentru euristica = functia distanta cerc 0.0009427000000000046
+
+

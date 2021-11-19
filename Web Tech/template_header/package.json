@@ -1,0 +1,21 @@
+{
+  "name": "template_header",
+  "version": "1.0.1",
+  "description": "prima mea aplicatie node",
+  "main": "app.js",
+  "dependencies": {
+    "ejs": "^2.7.4",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "aplicatie",
+    "template"
+  ],
+  "author": "vultur cristina",
+  "license": "ISC"
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE>
+<html>
+	<head>
+	<title>Chat</title>
+	<style>
+	#mesaje_chat{
+		border:1px solid black;
+		height:200px;
+		overflow:auto;
+		width:200px;
+	}
+	</style>
+	<script type="text/javascript" src="../../node_modules/socket.io-client/dist/socket.io.js"></script> 
+	<script>port=<%= port %></script>
+	<script>
+	
+	
+	socketUrl = "../../";  
+	if(document.location.href.indexOf("localhost") != -1) {  
+		socketUrl = "http://127.0.0.1:"+port;
+	}
+	//const socket = io(socketUrl,{reconnect: true});  
+	socket = io();
+	socket.on("mesaj_nou", (nume, culoare, mesaj) => {  
+	
+		var chat=document.getElementById("mesaje_chat");
+		chat.innerHTML+=`<p> ${nume} : <span style='color:${culoare}'>${mesaj}</span> `;
+		chat.scrollTop=chat.scrollHeight;
+	});
+	
+	function trimite(){
+		var culoare=document.getElementById("culoare").value;
+		var nume=document.getElementById("nume").value;
+		var mesaj=document.getElementById("mesaj").value;
+		
+		var http = new XMLHttpRequest();
+		var url = '/mesaj';
+		var params = `culoare=${culoare}&nume=${nume}&mesaj=${mesaj}`;
+		http.open('POST', url, true);
+
+		
+		http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+		
+		http.onreadystatechange = function() {
+			if(http.readyState == 4 && http.status == 200) {
+				//alert(http.responseText);
+			}
+		}
+		http.send(params);
+
+
+}
+
+	</script>
+	</head>
+	<body>
+		<div id="chat">
+			<div id="mesaje_chat">
+			</div>
+			<label>
+			Nume: <input type="text" id="nume" name="nume" value="ionel">
+			</label><br/>
+			<label>
+			Mesaj: <textarea id="mesaj" name="mesaj" value="bau! "></textarea>
+			</label><br/>
+			<label>
+			Culoare: <select id="culoare" name="culoare">
+			<option value="red">red</option>
+			<option value="green">green</option>
+			<option value="blue">blue</option>
+			</select>
+			</label><br/>
+			<button onclick="trimite()">ok</button>
+		</div>
+
+	</body>
+</html>

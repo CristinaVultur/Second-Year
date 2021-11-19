@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1571152291 source:d:\info\faculta\an 2\tehnici avansate de programare\tap_tema1\main.cpp
+	<iostream>
+	<fstream>
+	<string.h>
+	<vector>
+	<bits/stdc++.h>
+

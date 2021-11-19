@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ro">
+<style>
+	#gr{
+	display:grid;
+	grid-template-columms:repeat(3,1fr);
+	grid-template-rows:repeat(3,1fr);
+	height:300px;
+	width:300px;
+	}
+	#gr div{
+	border:1px solid black;
+	}
+	#gr div:first-child{
+	grid-area:1/1/1/3;
+	}
+	#gr div:nth-child(2){
+	grid-area:1/3/4/4;
+	}
+	#gr div:nth-child(3){
+	grid-area:3/2/3/3;
+	}
+	#gr div:nth-child(4){
+	grid-area:2/1/4/1;
+	}
+</style>
+<div id="gr">
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+</div>
+</html>

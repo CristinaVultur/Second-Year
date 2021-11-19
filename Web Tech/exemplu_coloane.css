@@ -1,0 +1,39 @@
+div#roz{
+	background:pink;
+}
+
+div#roz_misto{
+	background:fuchsia;
+}
+
+div#rosu{
+	background:red;
+}
+
+
+div.coloana{
+	
+	width:30%;
+	/*height:100%; - de ce nu e ok?*/
+	box-sizing:border-box;
+	padding-left:5%;
+	padding-right:5%;
+}
+
+/*decomentati*/
+
+div#container{
+	display:flex;
+}
+
+div#roz{
+	order:2;
+}
+
+div#roz_misto{
+	order:3;
+}
+
+div#rosu{
+	order:1;
+}

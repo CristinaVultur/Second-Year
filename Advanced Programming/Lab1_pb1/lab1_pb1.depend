@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1571695273 source:d:\info\faculta\an 2\tehnici avansate de programare\lab1_pb1\main.cpp
+	<iostream>
+	<bits/stdc++.h>
+

@@ -1,0 +1,51 @@
+# depslib dependency file v1.0
+1577186285 source:c:\users\catalin\desktop\gclab\project\linesweep\main.cpp
+	<iostream>
+	<algorithm>
+	<fstream>
+	<vector>
+	<string>
+	<fstream>
+	<queue>
+	<bits/stdc++.h>
+
+1576008550 source:d:\info\faculta\an 2\geometrie computationala\overlay-master\overlay-master\linesweep\main.cpp
+	<iostream>
+	<algorithm>
+	<fstream>
+	<vector>
+	<string>
+	<fstream>
+	<queue>
+	<bits/stdc++.h>
+
+1576049200 source:d:\overlay-master\overlay-master\linesweep\main.cpp
+	<iostream>
+	<algorithm>
+	<fstream>
+	<vector>
+	<string>
+	<fstream>
+	<queue>
+	<bits/stdc++.h>
+
+1576099586 source:c:\users\catalin\desktop\overlay-master\overlay-master\linesweep\main.cpp
+	<iostream>
+	<algorithm>
+	<fstream>
+	<vector>
+	<string>
+	<fstream>
+	<queue>
+	<bits/stdc++.h>
+
+1577371126 source:d:\info\faculta\an 2\geometrie computationala\polygon_intersection-master\linesweep\main.cpp
+	<iostream>
+	<algorithm>
+	<fstream>
+	<vector>
+	<string>
+	<fstream>
+	<queue>
+	<bits/stdc++.h>
+

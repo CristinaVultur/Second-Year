@@ -1,0 +1,28 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+
+.afisaj{
+	border:1px solid grey;
+	border-radius:20px;
+	padding:10px;
+}
+
+
+
+footer{
+	position: absolute;
+	bottom:0;
+	width:100%;
+	background:grey;
+}
+
+ul.menu>li{
+	display:inline-block;
+	width:100px;
+	background:yellow;
+	border:1px orange solid;
+	padding:2%;
+}

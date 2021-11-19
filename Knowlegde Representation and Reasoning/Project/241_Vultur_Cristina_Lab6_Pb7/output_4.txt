@@ -1,0 +1,43 @@
+
+
+Broscuta se afla pe frunza initiala id1.Greutate broasca:5.0
+Broscuta a sarit de la id1 la id2. Broscuta a mancat 0 insecte. Greutate: 4.0
+Broscuta a sarit de la id2 la id7. Broscuta a mancat 1 insecte. Greutate: 4.0
+Broscuta a sarit de la id7 la id8. Broscuta a mancat 3 insecte. Greutate: 6.0
+Broscuta a sarit de la id8 la id10. Broscuta a mancat 1 insecte. Greutate: 6.0
+Broscuta a sarit de la id10 la id11. Broscuta a mancat 2 insecte. Greutate: 7.0
+Broscuta a ajuns la mal in 6 sarituri
+Timpul pentru euristica = functia distanta cerc 1.1118203
+
+
+Broscuta se afla pe frunza initiala id1.Greutate broasca:5.0
+Broscuta a sarit de la id1 la id2. Broscuta a mancat 0 insecte. Greutate: 4.0
+Broscuta a sarit de la id2 la id7. Broscuta a mancat 1 insecte. Greutate: 4.0
+Broscuta a sarit de la id7 la id8. Broscuta a mancat 3 insecte. Greutate: 6.0
+Broscuta a sarit de la id8 la id10. Broscuta a mancat 1 insecte. Greutate: 6.0
+Broscuta a sarit de la id10 la id11. Broscuta a mancat 2 insecte. Greutate: 7.0
+Broscuta a ajuns la mal in 6 sarituri
+Timpul pentru euristica = functia distanta cerc 1.1150079
+
+
+Broscuta se afla pe frunza initiala id1.Greutate broasca:5.0
+Broscuta a sarit de la id1 la id2. Broscuta a mancat 0 insecte. Greutate: 4.0
+Broscuta a sarit de la id2 la id6. Broscuta a mancat 3 insecte. Greutate: 6.0
+Broscuta a sarit de la id6 la id8. Broscuta a mancat 0 insecte. Greutate: 5.0
+Broscuta a sarit de la id8 la id9. Broscuta a mancat 1 insecte. Greutate: 5.0
+Broscuta a sarit de la id9 la id10. Broscuta a mancat 2 insecte. Greutate: 6.0
+Broscuta a sarit de la id10 la id11. Broscuta a mancat 2 insecte. Greutate: 7.0
+Broscuta a ajuns la mal in 7 sarituri
+Timpul pentru euristica = functia distanta cerc 0.0183711
+
+
+Broscuta se afla pe frunza initiala id1.Greutate broasca:5.0
+Broscuta a sarit de la id1 la id2. Broscuta a mancat 0 insecte. Greutate: 4.0
+Broscuta a sarit de la id2 la id7. Broscuta a mancat 1 insecte. Greutate: 4.0
+Broscuta a sarit de la id7 la id8. Broscuta a mancat 3 insecte. Greutate: 6.0
+Broscuta a sarit de la id8 la id10. Broscuta a mancat 1 insecte. Greutate: 6.0
+Broscuta a sarit de la id10 la id11. Broscuta a mancat 2 insecte. Greutate: 7.0
+Broscuta a ajuns la mal in 6 sarituri
+Timpul pentru euristica = functia distanta cerc 1.1784319
+
+

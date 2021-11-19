@@ -1,0 +1,28 @@
+div#patratel{
+	border:1px solid black;
+	display:inline-block;
+	padding:20px;
+	background-color:white;
+	width:5px;
+	height:5px;
+}
+
+#ac{
+	border:2px solid lightblue;
+	padding:20px;
+}
+
+.ok{
+	color:blue;
+}
+.notok{
+	color:yellow;
+}
+
+.par{
+	background-color:pink;
+}
+
+.impar{
+	background-color:lightblue;;
+}
